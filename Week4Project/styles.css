@@ -1,0 +1,25 @@
+/*Cristian Villarreal 2/10/26*/
+
+/*global style for document - changes color of background and main text*/
+body {
+    background-color: #F5EFE6;
+    color: #4B3832;
+}
+/*style for the header section*/
+header {
+    background-color: #8B5E3B;
+    color: #FFF;
+}
+/*style for navigation bar*/
+nav {
+    background-color: #D4A373;
+}
+/*style for main content area*/
+main {
+    background-color: #FFF;
+}
+/*style for the footer section*/
+footer {
+    background-color: #8B5E3B;
+    color: #FFF;
+}
