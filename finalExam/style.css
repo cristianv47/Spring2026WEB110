@@ -1,0 +1,318 @@
+/*Cristian VIllarreal 3/31/26*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #a6b49a 0%, #111111 100%);
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 70%;
+    margin: auto;
+    padding: 8px;
+}
+
+.back-nine {
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 3px;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.kc-accent {
+    color: #9f8856;
+}
+
+nav ul {
+    list-style: none;
+    padding: 15px;
+    background-color: #020200;
+}
+
+nav ul li {
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color: lightgray;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 40px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/veteran-basket.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero img {
+    width: 30%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.hero-text {
+    max-width: 70%;
+    text-align: left;
+    font-size: 1.7em;
+    color: #9f8856;
+}
+
+.hero-back-nine {
+    color: white;
+}
+
+/*chan*/
+.hero-text p {
+    color: white;
+    padding: 10px;
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/*Section for Individual Features*/
+.feature {
+    background-color: #9AA191;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/*Form section styling*/
+form {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+}
+
+form label {
+    color: #9f8856;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.4em;
+    
+
+}
+
+form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.feature img {
+    border-radius: 15px;
+    padding: 10px;
+    width: 85%;
+    
+}
+
+.feature h3 {
+    color: #9f8856;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+   
+}
+
+.feature p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Unordered List for League Information */
+.feature ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.feature li {
+    padding: 8px 0;
+}
+
+.feature strong {
+    color: #9f8856;
+    display: inline-block;
+    width: 90px;
+}
+
+/*Styling for Courses page*/
+.courses {
+    background-color: #9AA191;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/*List styling for list of courses*/
+.courses ol {
+    padding: 20px 40px;
+    margin: 0;
+    font-weight: bold;
+    list-style-position: inside;
+}
+
+.courses li {
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    padding-left: 20px;
+}
+
+/*Style for Course Headers*/
+.courses h3 {
+    color: #9f8856;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+/*Style for Course Images*/
+.courses img {
+    border-radius: 10px;
+    display: block;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+
+.courses p {
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.2em;
+    padding: 20px;
+    text-align: left;
+}
+
+/*Table Styling*/
+table {
+    border: solid 2px #222;
+    margin: auto;
+    width: 80%;
+}
+
+th, td {
+    border: solid 2px #222;
+    padding: 0.5em;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #9ca08b;
+}
+
+tr:nth-child(even) {
+    background-color: #808080;
+}
+
+
+/*Footer*/
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    .hero img {
+        width: 200px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    
+
+    nav ul {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+}
