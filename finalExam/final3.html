@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--Cristian Villarreal 3/31/26-->
+
+<html lang="en-us">
+    <head>
+        <meta charset=UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Cristian Villarreal">
+        <meta name="description" content="home for disc golf">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>BACK NINE KC | Contact us</title>
+    </head>
+    
+    <!--Back to Top Link-->
+    <body id="top">
+        <div class="wrapper">
+
+            <header>
+                <h1 class="back-nine">BACK NINE <span class="kc-accent">KC</span></h1>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="final1.html">Home</a></li>
+                    <li><a href="final2.html">Courses</a></li>
+                    <li><a href="final3.html">Contact Us</a></li>
+                    <li><a href="final4.html">Credits</a></li>
+                </ul>
+            </nav>
+
+<!--Hero Section-->
+            <section class="hero">
+                <div class="hero-text">
+                    <h2>Contact Our Team</h2> <!--hero-back-nine tag keeps the -->
+                    <p>Please complete the form below and we'll get back to you as soon as possible.</p>
+                </div>
+            </section>
+
+<!--Our Mission section-->
+            <section class="form">
+                <div class="feature">
+                    <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+                    <!--Creates text box input for full name-->
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                        
+                    <!--Creates email input for email address-->
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+
+                    <!--Creates phone input for phone number-->
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                    <!--Creates checkbox for newsletter subscription-->
+                        <label for="newsletter">Subscribe to our newsletter:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+
+                    <!--Creates radio buttons for feedback type-->
+                        <label>Feedback Type:</label>
+                        <input type="radio" id="complaint" name="feedback_type" value="complaint">
+                        <label for="complaint">Complaint</label>
+                        <input type="radio" id="suggestion" name="feedback_type" value="suggestion">
+                        <label for="suggestion">Suggestion</label>
+                        <input type="radio" id="praise" name="feedback_type" value="praise">
+                        <label for="praise">Praise</label>
+
+                    <!--Creates a select dropdown for inquiry topic-->
+                        <label for="topic">Topic:</label>
+                        <select id="topic" name="topic">
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+
+                    <!--Creates a date input-->
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+
+                    <!--Creates textarea input for message-->
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required>
+                        </textarea>
+
+                    <!--Creates submit and reset buttons to send or reset form data-->
+                        <button type="submit">Send Message</button>
+                        <button type="reset">Reset</button>
+
+                    </form>
+                </div>
+            </section>
+
+            <footer class="footer">
+                Contact:
+                <a href="mailto:cvillar6@stumail.jccc.edu.com">cvillar6@stumail.jccc.edu.com</a>
+                <br>
+                <p><a href="#top">Back to the Top</a></p>
+                <br>
+                <p>&copy; 2025 Cristian Villarreal | All Rights Reserved</p>
+            </footer>
+            
+        </div>
+    </body>
+</html>
